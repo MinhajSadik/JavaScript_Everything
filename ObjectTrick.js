@@ -1,9 +1,15 @@
-// 3' object method return an array which is key value phirs
+// 1' object method return an array which is key value phirs
+
+// 2' Object ShortHand
+var x = 1
+var y = 2
 
 const myObject = {
     name: 'javascript',
     estd: 1995,
-    founder: 'Branden Eich'
+    founder: 'Branden Eich',
+    x,
+    y
 }
 
 const key = Object.keys(myObject)
