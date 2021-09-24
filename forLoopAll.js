@@ -1,5 +1,6 @@
 // for/ for_in / for_of
 
+
 for (var i = 1; i < 5; i++) {
     console.log(i);
 }
@@ -26,6 +27,7 @@ for(num of numbers){
 for(num in numbers){
     console.log(num);
 }
+
 
 for(str of myString){
     console.log(str);

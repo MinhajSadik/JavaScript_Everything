@@ -1,4 +1,4 @@
-// splice it's chanage main array return main new array
+// splice it's chanage main array and return main new array
 
 const numbers = [1, 2, 3, 4, 5];
 
