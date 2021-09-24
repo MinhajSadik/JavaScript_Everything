@@ -14,3 +14,13 @@ const myObject = {
 for(prop in myObject) {
     console.log(prop);
 }
+
+const numbers = [1, 2, 3, 4, 5, 1, 23]
+
+for(num of numbers){
+    console.log(num);
+}
+// for in return index
+for(num in numbers){
+    console.log(num);
+}
