@@ -16,6 +16,8 @@ for(prop in myObject) {
 }
 
 const numbers = [1, 2, 3, 4, 5, 1, 23]
+const myString = 'I love bangladesh'
+//for_of return 'per' element in array, number, string and for_in return 'per' index in array, number, string 
 
 for(num of numbers){
     console.log(num);
@@ -23,4 +25,12 @@ for(num of numbers){
 // for in return index
 for(num in numbers){
     console.log(num);
+}
+
+for(str of myString){
+    console.log(str);
+}
+
+for(ind in myString){
+    console.log(ind);
 }
