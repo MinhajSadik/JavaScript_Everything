@@ -79,5 +79,18 @@ newFunc();
 
 
 //3 new binding
+
+function Someone(name, age){
+    // this new keyword is create instant of object with Object.create(null) & return this
+    // let this = Object.create(null); 
+    this.name = name;
+    this.age = age;
+    console.log(`${name} is ${age} years old`);
+    // return this;
+}
+
+const ahmed = new Someone("ahmed", 25);
+
+
 //4 window binding
 
