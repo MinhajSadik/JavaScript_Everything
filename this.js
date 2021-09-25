@@ -95,11 +95,13 @@ const ahmed = new Someone("ahmed", 25);
 //4 window binding
 
 var PrintName = function(){
-    console.log(this.name);
+    console.log(window === this);
+    console.log(this.name); // undefiend
 };
 
-var sakib = {
+var aMan = {
     name : 'sakib'
 }
 
+PrintName()
 
