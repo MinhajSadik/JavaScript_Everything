@@ -26,6 +26,9 @@ class Person {
     eat(){
         console.log(`${this.name} is eating`);
     }
+    paly(){//Polymorphism
+        console.log(`${this.name} is palying`);
+    }
 }
 
 class Cricketer extends Person {
@@ -38,7 +41,8 @@ class Cricketer extends Person {
         this.country = country;
     }
     paly(){
-        console.log(`${this.name} is palying`);
+        super.paly(); //Polymorphism
+        console.log(`${this.name} is palying Cricket`);//Polymorphism
     }
 }
 
