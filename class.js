@@ -4,15 +4,15 @@ class Person {
         this.age = age;
     }
     eat(){
-        console.log(`Person is eating`);
+        console.log(`${this.name} is eating`);
     }
     sleep(){
-        console.log(`Person is sleeping`);
+        console.log(`${this.name} is sleeping`);
     }
     play(){
-        console.log(`Person is playing`);
+        console.log(`${this.name} is playing`);
     }
 }
 
 const sakib = new Person(`Sakib`, 43)
-sakib.play();
+sakib.eat();
