@@ -61,3 +61,21 @@ var playersWithAvgFourty = players.filter((player) => player.avg >= 40)
 
 console.log(playersWithAvgFourty);
 
+
+// example 3 array.map() built in by me higher order function 
+const javascript = ['javascript', 'Golang', 'Python', 'Rust', 'Haskell']
+
+function mapMin(arr, func){
+    const newArray = [];
+
+    for(let i = 0; i < arr.length; i++) {
+        newArray.push(func(arr[i]));
+    }
+    return newArray;
+}
+
+const myArray = mapMin(javascript, function(language){
+    return language;
+})
+
+console.log(myArray);
