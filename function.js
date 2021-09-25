@@ -1,3 +1,8 @@
+// higher order function example
 function hello() {
-    console.log('hello world!');
+    return function(){
+        console.log('hello world!');
+    }
 }
+
+hello()();
