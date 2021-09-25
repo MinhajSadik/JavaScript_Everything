@@ -63,6 +63,7 @@ console.log(playersWithAvgFourty);
 
 
 // example 3 array.map() built in by me higher order function 
+// self higher order function equivalent to 'array.map'
 const javascript = ['javascript', 'Golang', 'Python', 'Rust', 'Haskell']
 
 function mapMin(arr, func){
