@@ -85,7 +85,7 @@ function Someone(name, age){
     // let this = Object.create(null); 
     this.name = name;
     this.age = age;
-    console.log(`${name} is ${age} years old`);
+    console.log(`${this.name} is ${this.age} years old`);
     // return this;
 }
 
@@ -93,4 +93,13 @@ const ahmed = new Someone("ahmed", 25);
 
 
 //4 window binding
+
+var PrintName = function(){
+    console.log(this.name);
+};
+
+var sakib = {
+    name : 'sakib'
+}
+
 

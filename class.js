@@ -14,8 +14,8 @@ class Merson {
     }
 }
 
-const Aakib = new Merson(`Sakib`, 43)
-Aakib.eat();
+const sadik = new Merson(`Sakib`, 43)
+sadik.sleep();
 
 
 class Person {
