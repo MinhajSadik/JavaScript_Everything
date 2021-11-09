@@ -84,3 +84,10 @@ function sleep(name, time) {
 sleep("minhaj", "11");
 sleep("hifzur", "1");
 sleep("joynul", "2");
+
+function sum(a, b) {
+  return a + b;
+}
+
+let x = sum(3, 4);
+console.log(x);
