@@ -14,4 +14,4 @@ import myFuncDefault from './Externals.js'; // function import default
 
 myFuncDefault()
 myFunc()
-`
+`;
