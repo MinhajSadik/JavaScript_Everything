@@ -24,4 +24,14 @@ function checkLeapYear(year) {
 
 checkLeapYear(2020);
 
-function factorial(number) {}
+function factorial(num) {
+  let factorial = 1;
+  for (let i = 1; i <= num; i++) {
+    factorial = factorial * i;
+    console.log("factorial:", factorial, "i:", i);
+  }
+  return factorial;
+}
+
+const results = factorial(5);
+console.log(results);
