@@ -1,6 +1,6 @@
 // leap year check with arrow function
 const checkIfLeapYear = (year) => {
-  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+  if ((year % 4 === 0 && year % 400 === 0) || year % 100 !== 0) {
     console.log(year + " is leap year");
   } else {
     console.log(year + " isn't leap year");
@@ -35,3 +35,6 @@ function factorial(num) {
 
 const results = factorial(5);
 console.log(results);
+
+const next = null;
+console.log(typeof next === "undefiend");
