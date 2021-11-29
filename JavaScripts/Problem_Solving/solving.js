@@ -91,5 +91,15 @@ for (let i = 2; i <= 12; i++) {
   fibo[i] = fibo[i - 1] + fibo[i - 2];
   console.log(fibo[i], fibo[i - 1], fibo[i - 2]);
 }
-
 console.log(fibo);
+
+//4. fibonacci convert a function
+function fibonacci(n) {
+  const fibo = [0, 1];
+  for (let i = 2; i <= n; i++) {
+    fibo[i] = fibo[i - 1] + fibo[i - 2];
+  }
+  return fibo;
+}
+const fiboResult = fibonacci(12);
+console.log(fiboResult);
