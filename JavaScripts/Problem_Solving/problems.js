@@ -1,5 +1,5 @@
 //1.check if the year is a leap year, return true, else return false!
-//2.any number of factorial number using for & while loop itarative way!
+//2.find any number of factorial using for & while loop and function itarative way!
 //3.check null is object or not?
 //4.
 //5.
