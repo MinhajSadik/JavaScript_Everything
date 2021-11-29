@@ -1,13 +1,13 @@
 // leap year check with arrow function
 const checkIfLeapYear = (year) => {
-  if ((year % 4 === 0 && year % 400 === 0) || year % 100 !== 0) {
-    console.log(year + " is leap year");
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    console.log(year + " is a leap year");
   } else {
     console.log(year + " isn't leap year");
   }
 };
 
-checkIfLeapYear(2020);
+checkIfLeapYear(2022);
 
 // program to check leap year with normal function
 function checkLeapYear(year) {
@@ -22,7 +22,7 @@ function checkLeapYear(year) {
 // take input
 // const year = prompt("Enter a year:");
 
-checkLeapYear(2020);
+checkLeapYear(2022);
 
 function factorial(num) {
   let factorial = 1;
