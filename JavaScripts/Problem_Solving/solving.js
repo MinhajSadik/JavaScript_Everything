@@ -77,3 +77,19 @@ console.log(resultRecursive);
 //3. program: check null is object or not
 const next = null;
 console.log(typeof next === "object");
+
+//4. program: fibonacci sequence using forLoop.
+/* fibonacci sequence is common interview question,
+it is a series of numbers in which each number
+( Fibonacci number ) is the sum of the two preceding numbers.
+The simplest is the series [1 + 1 + 2 + 3 + 5 + 8 + 13 + 21 + 34 + 55]
+it's start with 0 and 1, and the next number is the sum of the previous two numbers always.
+*/
+
+let fibo = [0, 1];
+for (let i = 2; i <= 12; i++) {
+  fibo[i] = fibo[i - 1] + fibo[i - 2];
+  console.log(fibo[i], fibo[i - 1], fibo[i - 2]);
+}
+
+console.log(fibo);
