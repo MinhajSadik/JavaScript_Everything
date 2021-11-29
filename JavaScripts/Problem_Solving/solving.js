@@ -93,6 +93,15 @@ for (let i = 2; i <= 12; i++) {
 }
 console.log(fibo);
 
+//4. fibonacci using while loop
+const fiboWhile = [0, 1];
+let i = 2;
+while (i <= 12) {
+  fiboWhile[i] = fiboWhile[i - 1] + fiboWhile[i - 2];
+  i++;
+}
+console.log(fiboWhile);
+
 //4. fibonacci convert a function
 function fibonacci(n) {
   const fibo = [0, 1];
