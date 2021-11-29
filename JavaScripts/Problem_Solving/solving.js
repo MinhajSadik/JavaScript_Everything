@@ -106,8 +106,7 @@ console.log(fiboWhile);
 function fibonacciRecursive(n) {
   if (n <= 0) {
     return 0;
-  }
-  if (n <= 1) {
+  } else if (n <= 1) {
     return 1;
   } else {
     return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
@@ -126,3 +125,19 @@ function fibonacci(n) {
 }
 const fiboResult = fibonacci(12);
 console.log(fiboResult);
+
+//4. fibonacci series using function and recursive way
+function fibonacciSeriesRecursive(n) {
+  if (n === 0) {
+    return [0];
+  } else if (n === 1) {
+    return [0, 1];
+  } else {
+    const series = fibonacciSeriesRecursive(n - 1);
+    series.push(series[series.length - 1] + series[series.length - 2]);
+    return series;
+  }
+}
+
+const fiboSeriesResult = fibonacciSeriesRecursive(2);
+console.log(fiboSeriesResult);
