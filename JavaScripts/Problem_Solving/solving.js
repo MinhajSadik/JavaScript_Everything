@@ -63,11 +63,11 @@ console.log(result);
 n! = n*factorial(n-1)!
 */
 
-function factorialRecursive(num) {
-  if (num === 0) {
+function factorialRecursive(n) {
+  if (n === 0) {
     return 1;
   } else {
-    return num * factorialRecursive(num - 1);
+    return n * factorialRecursive(n - 1);
   }
 }
 
@@ -101,6 +101,20 @@ while (i <= 12) {
   i++;
 }
 console.log(fiboWhile);
+
+//4. fibonacci using a function and recursive way
+function fibonacciRecursive(n) {
+  if (n <= 0) {
+    return 0;
+  }
+  if (n <= 1) {
+    return 1;
+  } else {
+    return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
+  }
+}
+const fiboRecursiveResult = fibonacciRecursive(10);
+console.log(fiboRecursiveResult);
 
 //4. fibonacci convert a function
 function fibonacci(n) {
