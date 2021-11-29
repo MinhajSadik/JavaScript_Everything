@@ -1,6 +1,6 @@
-//1. check if the year is a leap year, return true, else return false
-//2.
-//3.
+//1.check if the year is a leap year, return true, else return false!
+//2.any number of factorial number using for & while loop itarative way!
+//3.check null is object or not?
 //4.
 //5.
 //6.
