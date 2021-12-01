@@ -141,3 +141,16 @@ function fibonacciSeriesRecursive(n) {
 
 const fiboSeriesResult = fibonacciSeriesRecursive(2);
 console.log(fiboSeriesResult);
+
+const checkPrime = (num) => {
+  for (let i = 2; i <= num; i++) {
+    if (num % i === 0) {
+      return "not prime";
+    } else {
+      return "prime";
+    }
+  }
+};
+
+const checkPrimeResult = checkPrime(19);
+console.log(checkPrimeResult);
