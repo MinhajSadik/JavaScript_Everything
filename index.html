@@ -7,9 +7,26 @@
     <title>Document</title>
   </head>
   <body>
-    <div>MinhajSadik</div>
     <div id="innerid"></div>
 
-    <script src="./modules/script.js"></script>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script
+      type="text/babel"
+      src="https://unpkg.com/babel-standalone@6/babel.min.js"
+    ></script>
+
+    <!-- Load our React component. -->
+    <script src="/ReactJS/src/Like.jsx"></script>
+
+    <script src="/JavaScripts/Random_Practice/script.js"></script>
   </body>
 </html>
