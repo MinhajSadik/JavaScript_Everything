@@ -176,3 +176,11 @@ var max = array.reduce(function (a, b) {
 }, 0);
 
 console.log(max);
+
+console.log(typeof isNaN(+"6"));
+
+console.log(typeof +String("true"));
+
+console.log("Hello" + "Javascript" + "Lover" + +-55);
+console.log(true + !!"false");
+console.log(5 * "5" + "10" - "2000");
