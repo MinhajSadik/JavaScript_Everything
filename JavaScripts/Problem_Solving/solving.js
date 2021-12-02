@@ -154,3 +154,25 @@ const checkPrime = (num) => {
 
 const checkPrimeResult = checkPrime(19);
 console.log(checkPrimeResult);
+
+function changeValue(a) {
+  console.log("Value of a inside function before changing: " + a);
+  a = 10;
+  console.log("Value of a inside function after changing: " + a);
+  return a;
+}
+
+var a = 100;
+console.log("Value of a before changing function is applied: " + a);
+const changeValueResult = changeValue(a);
+console.log(changeValueResult);
+console.log("Value of a after changing function is applied: " + a);
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var max = array.reduce(function (a, b) {
+  console.log("a:", a, "b:", b);
+  return Math.max(b);
+}, 0);
+
+console.log(max);
