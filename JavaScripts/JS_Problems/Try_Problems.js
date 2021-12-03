@@ -118,7 +118,7 @@ for (let i = 0; i < sentense.length; i++) {
 console.log(count);
 
 // count how many words in sentense function
-function countWords(sentense, count) {
+function countSentense(sentense, count) {
   for (let i = 0; i < sentense.length; i++) {
     let char = sentense[i];
     if (char === " ") {
@@ -127,7 +127,19 @@ function countWords(sentense, count) {
   }
   return count;
 }
-const resultCountWords = countWords("Minhaj Sadik ", 0);
-console.log(resultCountWords);
+const resultCountSentense = countSentense("Minhaj Sadik ", 0);
+console.log(resultCountSentense);
 
 //Next: find how many time are replayed a word in sentense
+function countWords(sentense, count) {
+  for (let i = 0; i < sentense.length; i++) {
+    const char = sentense[i];
+    if (char === "A") {
+      count++;
+    }
+  }
+  return count;
+}
+
+const resultCountWords = countWords("Minhaj A Sadik ", 0);
+console.log(resultCountWords);
