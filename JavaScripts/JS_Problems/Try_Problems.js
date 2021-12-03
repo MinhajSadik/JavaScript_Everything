@@ -102,3 +102,32 @@ var array = [3, 3, 3, 3, 4, 5, 6, 7, 8, 9, 10, 30];
 const resultDuplicateSet = removeDuplicateSet(array);
 
 console.log(resultDuplicateSet);
+
+// count how many words in sentense for loop
+
+let sentense = "Hello Programmers and Coders from Bangladesh";
+
+let count = 0;
+for (let i = 0; i < sentense.length; i++) {
+  let word = sentense[i];
+  if (word === " ") {
+    count++;
+  }
+}
+// count++;
+console.log(count);
+
+// count how many words in sentense function
+function countWords(sentense, count) {
+  for (let i = 0; i < sentense.length; i++) {
+    let char = sentense[i];
+    if (char === " ") {
+      count++;
+    }
+  }
+  return count;
+}
+const resultCountWords = countWords("Minhaj Sadik ", 0);
+console.log(resultCountWords);
+
+//Next: find how many time are replayed a word in sentense
