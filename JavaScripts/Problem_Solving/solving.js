@@ -227,7 +227,6 @@ for (let i = 0; i < arr1.length; i++) {
 
 console.log(unique);
 
-// 2. What will be output of following code ?
 // remove duplicates from array using Set
 function removeDuplicateSet(arr) {
   const unique = [...new Set(arr)];
@@ -248,7 +247,6 @@ console.log(resultDuplicateSet);
 // count how many words in sentense for loop
 
 let sentense = "Hello Programmers and Coders from Bangladesh";
-
 let count = 0;
 for (let i = 0; i < sentense.length; i++) {
   let word = sentense[i];
@@ -272,7 +270,7 @@ function countSentense(sentense, count) {
 const resultCountSentense = countSentense("Minhaj Sadik ", 0);
 console.log(resultCountSentense);
 
-//Next: find how many time are replayed a word in sentense
+//Next: find how many time are replayed "A" word in sentense
 function countWords(sentense, count) {
   for (let i = 0; i < sentense.length; i++) {
     const char = sentense[i];
@@ -285,3 +283,6 @@ function countWords(sentense, count) {
 
 const resultCountWords = countWords("Minhaj A Sadik ", 0);
 console.log(resultCountWords);
+
+
+//

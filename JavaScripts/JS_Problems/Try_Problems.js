@@ -42,3 +42,29 @@ console.log(a == c);
 console.log(a === c);
 console.log(b == c);
 console.log(b === c);
+
+// callback function in javascript
+function creator(name, others) {
+  let age = 22;
+  let height = 5.9;
+  others(age, height);
+  console.log("MR", name);
+}
+
+function others(age, height) {
+  return console.log("age", age, "height", height);
+}
+
+console.log(creator("Raj", others));
+
+function callMyName(name, callback) {
+  var myAge = 20;
+  callback(myAge);
+  console.log("Mr." + name);
+}
+
+function ages(age) {
+  console.log("my age is: " + age);
+}
+
+callMyName("Minhaj Sadik", ages);
