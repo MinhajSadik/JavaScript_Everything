@@ -85,11 +85,69 @@ function test() {
 
 console.log(test());
 
-const array = ["a", "b", "c", "d", "e"];
-const name = "minhajsadik";
-const slice = array.slice(2, -2);
+let array = ["a", "b", "c", "d", "e"];
+let name = "minhajsadik";
+let slice = array.slice(2, -2);
 console.log(slice);
-const splice = array.splice(2);
+let splice = array.splice(2);
 console.log(splice);
-const split = name.split("", 6);
+let split = name.split("", 6);
 console.log(split);
+
+console.log("I");
+
+setTimeout(() => {
+  console.log("love");
+}, 0);
+
+console.log("JavaScript!");
+
+let foo = [1, 2, 3];
+let [n] = foo;
+console.log(n);
+
+let rainForests = ["Amazon", "Borneo", "Cerrado", "Congo"];
+rainForests.splice(0, 2);
+console.log(rainForests);
+
+let foos = {
+  bar() {
+    console.log("Hello, world!");
+  },
+  name: "Albert",
+  age: 26,
+};
+
+console.log(foos.bar());
+
+console.log("dirt worm worm dirt dirt worm".split("dirt").length);
+
+// let foo = {
+//   name: "Albert",
+// };
+
+// delete foo.name;
+
+let numbers = [1, 2, 3, 4, 5];
+
+let myFunc = () => {
+  let s = 2;
+  return () => console.log("a is " + s);
+};
+
+let s = 1;
+
+let tests = myFunc();
+tests();
+
+console.log(tests);
+
+export let printMe = (str) => console.log(str);
+
+let matrix = [
+  ["You", "Can"],
+  ["Do", "It"],
+  ["!", "!", "!"],
+];
+
+matrix[(1)[2]];

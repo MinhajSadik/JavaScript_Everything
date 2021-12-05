@@ -4,3 +4,7 @@ let randomNumber = Math.random() * 10;
 let roundRandomNumber = Math.round(randomNumber);
 
 console.log(roundRandomNumber);
+
+import { printMe } from "./Try_Problems";
+
+printMe();
