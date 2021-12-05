@@ -84,3 +84,12 @@ function test() {
 }
 
 console.log(test());
+
+const array = ["a", "b", "c", "d", "e"];
+const name = "minhajsadik";
+const slice = array.slice(2, -2);
+console.log(slice);
+const splice = array.splice(2);
+console.log(splice);
+const split = name.split("", 6);
+console.log(split);

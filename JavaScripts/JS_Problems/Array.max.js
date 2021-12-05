@@ -5,6 +5,7 @@ for (let i = 0; i < arr.length; i++) {
   if (element > max) {
     max = element;
   }
+  // return max;
 }
 
 console.log(max);
