@@ -68,3 +68,19 @@ function ages(age) {
 }
 
 callMyName("Minhaj Sadik", ages);
+
+function test() {
+  let n = () => {
+    console.log("1");
+  };
+
+  n();
+
+  return 0;
+
+  n = () => {
+    console.log("2");
+  };
+}
+
+console.log(test());
