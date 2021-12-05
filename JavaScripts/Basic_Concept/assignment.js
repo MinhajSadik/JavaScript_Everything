@@ -68,14 +68,17 @@ console.log(hotelCostResult);
 //2-function name: megaFriend
 
 function megaFriend(friend) {
-  let name = "";
+  if (friend <= 0 || friend === " " || friend === undefined) {
+    return "Invalid Input! Please Provide Me a Name Array";
+  }
+  let megaName = "";
   for (let i = 0; i < friend.length; i++) {
-    const maxName = friend[i];
-    if (maxName.length > name.length) {
-      name = maxName;
+    const friendName = friend[i];
+    if (megaName.length < friendName.length) {
+      megaName = friendName;
     }
   }
-  return name;
+  return megaName;
 }
 let friends = [
   "MinhajSadik",
