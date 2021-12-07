@@ -43,3 +43,6 @@ const resultFriends_age = shortFunctionCall(friends_age);
 console.log(resultFriends_age);
 const resultArray = shortFunctionCall(array);
 console.log(resultArray);
+
+
+function 
