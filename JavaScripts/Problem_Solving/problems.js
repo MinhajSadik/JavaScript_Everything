@@ -75,7 +75,7 @@
 // The return array is .
 
 // problem 2
-// Solution: visit hackerRank.js file adn see the solution
+/* Solution: visit hackerRank.js file adn see the solution
 // In this challenge, you are required to calculate and print the sum of the elements in an array,
 // keeping in mind that some of those integers may be quite large.
 
@@ -111,7 +111,7 @@
 
 // The range of the 32-bit integer is .
 // When we add several integer values, the resulting sum might exceed the above range.
-// You might need to use long int C/C++/Java to store such sums.
+ You might need to use long int C/C++/Java to store such sums.*/
 
 // Problem 3
 // Solution: visit hackerRank.js file adn see the solution
