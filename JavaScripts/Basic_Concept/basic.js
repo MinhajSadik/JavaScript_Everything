@@ -27,7 +27,7 @@ export function shortFunctionCall(givenValue) {
     if (givenNum % 2 === 0) {
       console.log(`Jur Sonkha: ${givenNum}`);
     } else if (givenNum % 2 !== 0) {
-      console.log(`build a jor Sonkha: ${givenNum * 2}`);
+      console.log(` Jor Sonkha Hoye Gese: ${givenNum * 2}`);
     }
   }
 }
