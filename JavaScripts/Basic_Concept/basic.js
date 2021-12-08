@@ -44,5 +44,21 @@ console.log(resultFriends_age);
 const resultArray = shortFunctionCall(array);
 console.log(resultArray);
 
+// find which team is winner
+const goals = ["red", "green", "green", "red", "red", "green"];
 
-function 
+function winnerTeam(array) {
+  const teamOne = array.filter((item) => item === "red").length;
+  const teamTwo = array.filter((item) => item === "green").length;
+  if (teamOne > teamTwo) {
+    console.log(`Team One is winner with ${teamOne.length} goals`);
+  } else if (teamTwo > teamOne) {
+    console.log(`Team Two is winner with ${teamTwo.length} goals`);
+  } else {
+    console.log("Draw");
+  }
+}
+
+const resultWinnerTeam = winnerTeam(goals);
+
+
