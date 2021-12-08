@@ -37,3 +37,11 @@ console.warn(resultFactorial);
 console.error(resultFactorial);
 console.time("factorial", resultFactorial);
 console.timeEnd("factorial", resultFactorial);
+
+var x;
+if (1 < x < 3) {
+  console.log("x is between 1 and 3");
+}
+if ("" == 0) {
+  console.log("it is, but why?");
+}
