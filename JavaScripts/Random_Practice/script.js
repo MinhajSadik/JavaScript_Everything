@@ -1,16 +1,23 @@
-let array = new Array();
+// let array = new Array();
 
-console.log(Array.prototype);
+// console.log(Array.prototype);
 
-let object = new Object();
+// let object = new Object();
 
-console.log(Object.prototype);
+// console.log(Object.prototype);
 
-const func = new Function();
+// const func = new Function();
 
-console.dir(Function.prototype);
+// console.dir(Function.prototype);
 
-const inneridvar = "innerid";
-const scriptsid = document.getElementById(inneridvar);
+document.getElementById("root").innerText = "something like Minhaj";
 
-scriptsid.innerHTML = "something like that";
+document.getElementById("addNew").addEventListener("click", function (e) {
+  let newItem = document.createElement("li");
+  newItem.innerText = "New Item";
+  document.getElementById("myList").appendChild(newItem);
+});
+
+document.getElementById("myList").addEventListener("click", function (e) {
+  e.target.parentNode.removeChild(e.target);
+});
