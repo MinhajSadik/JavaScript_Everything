@@ -10,14 +10,14 @@
 
 // console.dir(Function.prototype);
 
-document.getElementById("root").innerText = "something like Minhaj";
+document.getElementById("root").innerText = "something like that Minhaj";
 
-document.getElementById("addNew").addEventListener("click", function (e) {
-  let newItem = document.createElement("li");
-  newItem.innerText = "New Item";
-  document.getElementById("myList").appendChild(newItem);
-});
+// document.getElementById("addNew").addEventListener("click", function (e) {
+//   let newItem = document.createElement("li");
+//   newItem.innerText = "New Item";
+//   document.getElementById("myList").appendChild(newItem);
+// });
 
-document.getElementById("myList").addEventListener("click", function (e) {
-  e.target.parentNode.removeChild(e.target);
-});
+// document.getElementById("myList").addEventListener("click", function (e) {
+//   e.target.parentNode.removeChild(e.target);
+// });
