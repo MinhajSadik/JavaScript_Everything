@@ -1,1 +1,42 @@
-
+.loginArea {
+  width: 600px;
+  height: 300px;
+  background-color: #ecb5b5;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 200px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #ffffff;
+}
+.loginArea h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.loginArea input {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  position: relative;
+  top: 10px;
+  left: 120px;
+}
+.loginArea button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(51, 8, 8);
+  background-color: #2b0303;
+  color: rgb(162, 224, 16);
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  left: 220px;
+  top: 20px;
+}
+#bankArea {
+  display: none;
+}

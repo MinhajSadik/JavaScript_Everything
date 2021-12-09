@@ -6,17 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>JavaScript-Everything</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div id="root"></div>
-
-    <div id="" class="loginArea">
-      <input type="text" />
-      <input type="password" name="" id="" />
-      <button type="submit" id="loginBtn">Login</button>
+    <div id="login" class="loginArea">
+      <div class="submitArea">
+        <h1>Welcome to my Own Bank</h1>
+        <input type="text" />
+        <input type="password" name="" id="" />
+        <br />
+        <button class="btn btn-success" type="submit" id="loginBtn">
+          Login
+        </button>
+      </div>
     </div>
 
-    <script></script>
+     <!-- Main Bank Area  -->
+    <div id="bankArea" class="">
+      <div id="" class="row">
+        <div class="col-md-4">
+          <div class="status">
+            <h4>Deposit</h4>
+            <h2>$<span>00</span></h2>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="status">
+            <h4>Withdraw</h4>
+            <h2>$<span>00</span></h2>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="status">
+            <h4>Balance</h4>
+            <h2>$<span>00</span></h2>
+          </div>
+      </div>
+    </div>
+
+      
+
+    <script>
+      var loginBtn = document.getElementById("loginBtn");
+      loginBtn.addEventListener("click", function () {
+        var loginArea = document.getElementById("login");
+        loginArea.style.display = "none";
+        var bankArea = document.getElementById("bankArea");
+        bankArea.style.display = "block";
+      });
+    </script>
 
     <script src="/JavaScripts/Random_Practice/script.js"></script>
   </body>
