@@ -2,9 +2,10 @@
   "name": "practice-javascript",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "playground.js",
   "type": "module",
   "scripts": {
+    "start": "nodemon playground.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/MinhajSadik/Practice-JavaScript/issues"
   },
-  "homepage": "https://github.com/MinhajSadik/Practice-JavaScript#readme"
+  "homepage": "https://github.com/MinhajSadik/Practice-JavaScript#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
