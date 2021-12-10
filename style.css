@@ -40,3 +40,25 @@
 #bankArea {
   display: none;
 }
+
+.status {
+  width: 200px;
+  height: 150px;
+  background-color: #ecb5b5;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 200px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #ffffff;
+}
+
+.transactionArea {
+  width: 400px;
+  height: 200px;
+  background-color: #ecb5b5;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #ffffff;
+}
