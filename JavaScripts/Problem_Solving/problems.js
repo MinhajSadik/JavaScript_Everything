@@ -115,3 +115,5 @@
 
 // Problem 3
 // Solution: visit hackerRank.js file adn see the solution
+
+console.log("Problem 3");

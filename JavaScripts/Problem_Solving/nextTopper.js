@@ -43,7 +43,6 @@ if (!code) {
   console.log("Else Block");
 }
 
-
 //falsey values in javascript
 //false
 //0
@@ -51,3 +50,10 @@ if (!code) {
 //null
 //undefined
 //NaN
+
+var firstName = "Minhaj";
+{
+  let firstName = "Sadik";
+}
+
+console.log(firstName);
