@@ -45,17 +45,27 @@ const resultArray = shortFunctionCall(array);
 console.log(resultArray);
 
 // find which team is winner
-const goals = ["red", "green", "green", "red", "red", "green"];
+const goals = [
+  "red",
+  "green",
+  "green",
+  "red",
+  "red",
+  "green",
+  "green",
+  "red",
+  "green",
+];
 
 function winnerTeam(array) {
   const teamOne = array.filter((item) => item === "red").length;
   const teamTwo = array.filter((item) => item === "green").length;
   if (teamOne > teamTwo) {
-    console.log(`Team One is winner with ${teamOne.length} goals`);
+    console.log(`Team One is winner with ${teamOne} goals`);
   } else if (teamTwo > teamOne) {
-    console.log(`Team Two is winner with ${teamTwo.length} goals`);
+    console.log(`Team Two is winner with ${teamTwo} goals`);
   } else {
-    console.log("Draw");
+    console.log(`Draw: ${array.length} goals`);
   }
 }
 
