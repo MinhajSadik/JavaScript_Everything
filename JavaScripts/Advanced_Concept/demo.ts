@@ -1,15 +1,18 @@
-var names: string[] = ["John", "Jane", "Mary"];
-console.log(names);
-
+var names: string[] = ["minhaj", "minhaj", "minhaj"];
 interface Person {
   firstName: string;
   lastName: string;
 }
 
-var resultOfNames = names.map((name: string): Person => {
+type Person2 = {
+  firstName: string;
+  lastName: string;
+};
+
+var resultOfNames = names.map((name: string): Person2 => {
   return {
     firstName: name,
-    lastName: "Doe",
+    lastName: "sadik",
   };
 });
 
