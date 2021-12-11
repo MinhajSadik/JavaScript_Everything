@@ -27,3 +27,41 @@ function fotballPlayerZone(player) {
 }
 
 console.log(fotballPlayerZone([0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1]));
+
+function loopOne(arr, N) {
+  for (let i = 0; i < N; i++) {
+    for (let j = 0; j < N; j++) {
+      console.log(arr[i][j]++);
+    }
+  }
+}
+
+function loopTwo(arr, N) {
+  for (let i = 0; i < N; i++) {
+    for (let j = 0; j < N; j++) {
+      console.log(arr[j][i]++);
+    }
+  }
+}
+
+console.log(
+  loopOne(
+    [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+    ],
+    3
+  )
+);
+
+console.log(
+  loopTwo(
+    [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+    ],
+    3
+  )
+);
