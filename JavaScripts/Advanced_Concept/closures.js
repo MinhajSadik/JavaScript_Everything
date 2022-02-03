@@ -18,5 +18,29 @@ const bankAccount = function (initialBalance) {
   };
 };
 
-const myAccount = bankAccount(100, 000);
+const myAccount = bankAccount(100000);
 console.dir(myAccount);
+
+//closours with var
+for (var i = 0; i < 3; i++) {
+  const myFunc = () => {
+    console.log(i);
+  };
+  console.log(i);
+  console.dir(myFunc);
+  setTimeout(myFunc, 3000);
+}
+
+console.log(i);
+
+//closours with let
+for (let i = 0; i < 3; i++) {
+  const myFunc = () => {
+    console.log(i);
+  };
+  console.log(i);
+  console.dir(myFunc);
+  setTimeout(myFunc, 3000);
+}
+
+console.log(i);
