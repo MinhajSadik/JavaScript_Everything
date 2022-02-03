@@ -1,3 +1,5 @@
+// closures itself an function with some remember values in it.
+// closures are functions that refer to variables in their parent scope.
 var num1 = 30;
 var num2 = 20;
 
