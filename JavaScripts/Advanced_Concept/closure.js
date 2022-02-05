@@ -46,3 +46,13 @@ for (let i = 0; i < 3; i++) {
 }
 
 console.log(i);
+
+//closures another example
+var num1 = 30;
+
+const sum = function () {
+  var num2 = 10;
+  return num1 + num2;
+};
+
+console.dir(sum);
