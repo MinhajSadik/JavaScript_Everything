@@ -57,7 +57,10 @@ const sum = function () {
 
 console.dir(sum);
 
-//closure another concept
+// closure another concept
+// here function never kept remembering the exact value,
+// function keeps remembering their reference value.
+
 (function () {
   var num1 = 30;
 
