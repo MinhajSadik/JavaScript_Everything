@@ -56,3 +56,21 @@ const sum = function () {
 };
 
 console.dir(sum);
+
+//closure another concept
+(function () {
+  var num1 = 30;
+
+  const sum = function () {
+    var num2 = 10;
+    return num1 + num2;
+  };
+
+  console.log(sum());
+  console.dir(sum);
+
+  num1 = 40;
+  num2 = 20;
+  console.log(sum());
+  console.dir(sum);
+})();
