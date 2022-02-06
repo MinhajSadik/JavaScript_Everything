@@ -77,3 +77,22 @@ console.dir(sum);
   console.log(sum());
   console.dir(sum);
 })();
+
+function stopWatch() {
+  const startTime = Date.now();
+  function delayTime() {
+    return Date.now() - startTime;
+  }
+  return delayTime;
+}
+
+const timer = stopWatch();
+
+for (let i = 0; i < 1000000; i++) {
+  var a = Math.random() * 1000000;
+}
+
+timer();
+
+console.dir(timer);
+console.log(timer());
