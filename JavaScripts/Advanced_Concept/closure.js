@@ -78,6 +78,8 @@ console.dir(sum);
   console.dir(sum);
 })();
 
+// closures another example
+// closure experiment with let and var keyword, cause it's behave differently in different keyword.
 function stopWatch() {
   const startTime = Date.now();
   function delayTime() {
