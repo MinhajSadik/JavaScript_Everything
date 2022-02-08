@@ -3,7 +3,7 @@
 var num1 = 30;
 var num2 = 20;
 
-const sum = function () {
+var sum = function () {
   var num = 10;
   return function () {
     return num + num1 + num2;
@@ -50,7 +50,7 @@ console.log(i);
 //closures another example
 var num1 = 30;
 
-const sum = function () {
+var sum = function () {
   var num2 = 10;
   return num1 + num2;
 };
@@ -99,8 +99,9 @@ console.dir(timer);
 console.log(timer());
 
 timer = null; // to free the memory of the timer function
-timer(); // undefined
+// timer(); // undefined
 
+// async(); closure another example.
 var a;
 function async() {
   a = 1;
@@ -114,3 +115,34 @@ function async() {
 
 a = 2;
 async();
+
+// closures api call example
+
+function apiCallFunction(url) {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => console.log(url));
+}
+
+apiCallFunction("https://jsonplaceholder.typicode.com/todos/1");
+console.log("i'm here");
+
+// closures sync & async example with var & let keyword
+// var i = 0;
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => {
+    console.log(i);
+  }, 3000);
+}
+
+// var and let experiment and behave differently in a different situations.
+// var i = 0;
+for (var i = 0; i < 3; i++) {
+  var myFunc = () => {
+    console.log(i);
+  };
+  console.log(i);
+  console.dir(myFunc);
+  setTimeout(myFunc, 3000);
+}
+console.log(i);
