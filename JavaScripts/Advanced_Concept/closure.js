@@ -88,13 +88,29 @@ function stopWatch() {
   return delayTime;
 }
 
-const timer = stopWatch();
+var timer = stopWatch();
 
 for (var i = 0; i < 1000000; i++) {
   var a = Math.random() * 1000000;
 }
 
 timer();
-
 console.dir(timer);
 console.log(timer());
+
+timer = null; // to free the memory of the timer function
+timer(); // undefined
+
+var a;
+function async() {
+  a = 1;
+
+  var myFunc = () => {
+    console.log(a);
+  };
+  setTimeout(myFunc, 3000);
+  console.dir(myFunc);
+}
+
+a = 2;
+async();
