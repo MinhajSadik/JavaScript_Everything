@@ -135,7 +135,7 @@ for (let i = 0; i < 3; i++) {
   }, 3000);
 }
 
-// var and let experiment and behave differently in a different situations.
+// var and let experiment and closure behave differently in a different situations.
 // var i = 0;
 for (var i = 0; i < 3; i++) {
   var myFunc = () => {
