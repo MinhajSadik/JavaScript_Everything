@@ -62,3 +62,13 @@ myFunc();
 function myFunc() {
   console.log("I am a function");
 }
+
+// hoisting another concept with function
+
+function myFunc1() {
+  //  this variable is hoisted to the top of the into function in scope and as usual, it will work followed by the previous hoisting concept
+  language = "javascript";
+  var language;
+  console.log(language);
+}
+myFunc1();
