@@ -55,3 +55,10 @@ function getLanguage() {
 }
 
 console.log(`I Love ${getLanguage()}`);
+
+// hoisting how to works with function
+//all variable and function defination will be hoisted to the top of the scope
+myFunc();
+function myFunc() {
+  console.log("I am a function");
+}
