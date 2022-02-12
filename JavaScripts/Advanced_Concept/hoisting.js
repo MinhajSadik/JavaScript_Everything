@@ -41,10 +41,10 @@ console.log(`I Love ${getLanguage()}`);
 
 // hoisting concept with let
 
-let LANGUAGE = "JAVA";
-let language = "javascript";
+let LANGUAGE1 = "JAVA";
+let language1 = "javascript";
 
-function getLanguage() {
+function getLanguage1() {
   if (!language) {
     // this concept won't be working properly for using let
     let language;
@@ -54,7 +54,7 @@ function getLanguage() {
   return language; // actually this language returned
 }
 
-console.log(`I Love ${getLanguage()}`);
+console.log(`I Love ${getLanguage1()}`);
 
 // hoisting how to works with function
 //all variable and function defination will be hoisted to the top of the scope
@@ -64,7 +64,6 @@ function myFunc() {
 }
 
 // hoisting another concept with function
-
 function myFunc1() {
   //  this variable is hoisted to the top of the into function in scope and as usual, it will work followed by the previous hoisting concept
   language = "javascript";
@@ -72,3 +71,15 @@ function myFunc1() {
   console.log(language);
 }
 myFunc1();
+
+// hoisting another concept with named function
+// const myFunc2;
+// myFunc2();
+
+// myFunc2 = undefined;
+const myFunc3 = function () {
+  //  this variable is hoisted to the top of the into function in scope and as usual, it will work followed by the previous hoisting concept
+  language = "javascript call named function";
+  var language;
+  console.log(language);
+};
