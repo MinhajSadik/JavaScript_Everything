@@ -3,9 +3,6 @@
  * prototype is a property of an object
  * prototype is an object
  * prototype is a prototype of all objects
- * prototype is a prototype of all functions
- * prototype is a prototype of all arrays
- * prototype is a prototype of all strings
  */
 
 // prototype example 00
@@ -41,3 +38,36 @@ function Person(name, age) {
 
 const minhaj = Person("minhaj", 24);
 const sadik = Person("sadik", 24);
+
+// prototype example 02
+const personMethod = {
+  eat() {
+    console.log("person eating");
+  },
+  sleep() {
+    console.log("person sleeping");
+  },
+  play() {
+    console.log("person playing");
+  },
+};
+
+function Person1(name, age) {
+  const person = {};
+  person.eat = personMethod.eat;
+  person.sleep = personMethod.sleep;
+  person.play = personMethod.play;
+  return person;
+}
+
+const minhaj1 = Person1("minhaj1", 24);
+const sadik1 = Person1("sadik1", 24);
+
+const captain = {
+  name: "minhajsadik",
+  age: 24,
+  expertise: "javascript, golang, cricket, badminton, tennis",
+};
+
+const player = Object.create(captain);
+console.log(player.name);
