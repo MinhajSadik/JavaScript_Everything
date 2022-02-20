@@ -92,5 +92,27 @@ Person2.prototype = {
 };
 
 const sakib = Person2("sakib", 24);
-sakib.eat();
+// sakib.eat();
 const tamim = Person2("tamim", 24);
+
+// prototype with new keyword
+function PersonWithNew(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+PersonWithNew.prototype = {
+  eat() {
+    console.log("person eating");
+  },
+  sleep() {
+    console.log("person sleeping");
+  },
+  play() {
+    console.log("person playing");
+  },
+};
+
+const samir = new PersonWithNew("sakib", 24);
+sakib.eat();
+const karim = new PersonWithNew("tamim", 24);
