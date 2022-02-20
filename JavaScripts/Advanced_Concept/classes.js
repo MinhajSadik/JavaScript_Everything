@@ -9,5 +9,5 @@ Persons.prototype = {
   },
 };
 
-const shahid = new Persons("shahid", 24);
-shahid.eat();
+const sadik = new Persons("sadik", 24);
+sadik.eat();
