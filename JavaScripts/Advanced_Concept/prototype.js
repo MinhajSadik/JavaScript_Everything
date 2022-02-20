@@ -114,5 +114,30 @@ PersonWithNew.prototype = {
 };
 
 const samir = new PersonWithNew("sakib", 24);
-sakib.eat();
+// sakib.eat();
 const karim = new PersonWithNew("tamim", 24);
+
+// move forward on the prototype to class
+
+class PersonClass {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  eat() {
+    console.log("personClass eating");
+  }
+
+  sleep() {
+    console.log("personClass sleeping");
+  }
+
+  play() {
+    console.log("personClass playing");
+  }
+}
+
+const minhajClass = new PersonClass("minhaj", 24);
+minhajClass.eat();
+const sadikClass = new PersonClass("sadik", 24);
