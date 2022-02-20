@@ -71,3 +71,26 @@ const captain = {
 
 const player = Object.create(captain);
 console.log(player.name);
+
+function Person2(name, age) {
+  let person = Object.create(Person2.prototype);
+  person.name = name;
+  person.age = age;
+  return person;
+}
+
+Person2.prototype = {
+  eat() {
+    console.log("person eating");
+  },
+  sleep() {
+    console.log("person sleeping");
+  },
+  play() {
+    console.log("person playing");
+  },
+};
+
+const sakib = Person2("sakib", 24);
+sakib.eat();
+const tamim = Person2("tamim", 24);
