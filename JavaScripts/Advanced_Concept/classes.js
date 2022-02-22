@@ -1,14 +1,9 @@
 function Persons(name, age) {
-  constructor(name, age) {
   this.name = name;
   this.age = age;
-  }
-  getName() {
+  this.getName = function () {
     return this.name;
-  }
-  getAge() {
-    return this.age;
-  }
+  };
 }
 
 Persons.prototype = {
@@ -19,3 +14,4 @@ Persons.prototype = {
 
 const sadik = new Persons("sadik", 24);
 sadik.eat();
+sadik.getName();
