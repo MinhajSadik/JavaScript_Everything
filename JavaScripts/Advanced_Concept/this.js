@@ -12,3 +12,7 @@
  */
 
 // started 'this' with implicit binding
+function implicit() {
+  console.log(this);
+}
+implicit();
