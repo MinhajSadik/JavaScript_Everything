@@ -80,3 +80,19 @@ var result = square(y);
 console.log(y); // 10 -- no change
 console.log(result); // 100
 console.log(y);
+
+// Create a function that takes the age in years and returns the age in days.
+function calcAge(age) {
+  return age * 365;
+}
+
+const resultCalcAge = calcAge(65);
+console.log(resultCalcAge);
+
+// Create a function that finds the maximum range of a triangle's third edge, where the side lengths are all integers.?
+function nextStage(part1, part2) {
+  return part1 + part2 - 1;
+}
+
+const resultNextStage = nextStage(5, 7);
+console.log(resultNextStage);
