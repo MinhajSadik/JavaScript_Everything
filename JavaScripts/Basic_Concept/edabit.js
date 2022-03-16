@@ -32,10 +32,33 @@ console.log(resultGiveMeSomething);
 
 //Write a function that converts hours into seconds.
 function howManySeconds(hours) {
-  // return hours * 3600;
+  // return hours * 3600; // 3600 is the number of seconds in an hour
   // return hours * 60;
   return hours * 60 * 60;
 }
 
 const resultHowManySeconds = howManySeconds(10);
 console.log(resultHowManySeconds);
+
+// Write a function that takes a number as an argument and returns true if it's divisible by 3, otherwise return false.
+function isDivisibleByThree(num) {
+  return num % 3 === 0;
+}
+const resultIsDivisibleByThree = isDivisibleByThree(9);
+console.log(resultIsDivisibleByThree);
+
+// write a function that return voltage and current of a circuit
+function voltageAndCurrent(voltage, current) {
+  return voltage * current;
+}
+
+const resultVoltageAndCurrent = voltageAndCurrent(10, 5);
+console.log(resultVoltageAndCurrent);
+
+//Given an n-sided regular polygon n, return the total sum of internal angles (in degrees).
+function polygon(n) {
+  return (n - 2) * 180;
+}
+
+const resultPolygon = polygon(6);
+console.log(resultPolygon);
