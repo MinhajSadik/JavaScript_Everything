@@ -62,3 +62,27 @@ function polygon(n) {
 
 const resultPolygon = polygon(6);
 console.log(resultPolygon);
+
+//Write a function that takes an integer minutes and converts it to seconds.
+function convertMinutes(minutes) {
+  return minutes * 60;
+}
+const resultConvertMinutes = convertMinutes(5);
+console.log(resultConvertMinutes);
+
+//Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+function plusOne(num) {
+  return num + 1;
+}
+
+const resultPlusOne = plusOne(5);
+console.log(resultPlusOne);
+
+//In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
+
+function animals(chickens, cows, pigs) {
+  return chickens * 2 + cows * 4 + pigs * 4;
+}
+
+const resultAnimals = animals(2, 3, 5);
+console.log(resultAnimals);
