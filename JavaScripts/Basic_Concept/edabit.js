@@ -86,3 +86,26 @@ function animals(chickens, cows, pigs) {
 
 const resultAnimals = animals(2, 3, 5);
 console.log(resultAnimals);
+
+// When we sum the integers  and , we get the integer .
+// When we sum the floating-point numbers  and , we get .
+// When we concatenate HackerRank with is the best place to learn and practice coding!
+var i = 4;
+var d = 4.0;
+var s = "HackerRank ";
+
+// Declare second integer, double, and String variables.
+// Read and save an integer, double, and String to your variables.
+var i2 = +readLine();
+var d2 = +readLine();
+var s2 = readLine();
+
+// Print the sum of both integer variables on a new line.
+console.log(i + i2);
+
+// Print the sum of the double variables on a new line.
+console.log((d + d2).toFixed(1));
+
+// Concatenate and print the String variables on a new line
+// The 's' variable above should be printed first.
+console.log(s + s2);
