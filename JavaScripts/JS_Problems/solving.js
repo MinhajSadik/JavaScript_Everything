@@ -238,9 +238,9 @@ function removeDuplicateSet(arr) {
   return unique;
 }
 
-var array = [3, 3, 3, 3, 4, 5, 6, 7, 8, 9, 10, 30];
+var arrays = [3, 3, 3, 3, 4, 5, 6, 7, 8, 9, 10, 30];
 
-const resultDuplicateSet = removeDuplicateSet(array);
+const resultDuplicateSet = removeDuplicateSet(arrays);
 
 console.log(resultDuplicateSet);
 
@@ -284,5 +284,16 @@ function countWords(sentense, count) {
 const resultCountWords = countWords("Minhaj A Sadik ", 0);
 console.log(resultCountWords);
 
+// Next: find how many time are replayed "A" word in sentense
+function countWord(sentense, count) {
+  for (let i = 0; i < sentense.length; i++) {
+    const char = sentense[i];
+    if (char === "A") {
+      count++;
+    }
+  }
+  return count;
+}
 
-//
+const resultCountWord = countWord("Minhaj A Sadik ", 0);
+console.log("resultCountWord: ", resultCountWord);
