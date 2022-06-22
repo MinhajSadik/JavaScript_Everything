@@ -1,5 +1,6 @@
 // closures itself a function with some remember values in it.
 // closures are functions that refer to variables in their parent scope.
+
 var num1 = 30;
 var num2 = 20;
 
@@ -138,11 +139,24 @@ for (let i = 0; i < 3; i++) {
 // var and let experiment and closure behave differently in a different situations.
 // var i = 0;
 for (var i = 0; i < 3; i++) {
-  var myFunc = () => {
+  var myFunc1 = () => {
     console.log(i);
   };
   console.log(i);
-  console.dir(myFunc);
-  setTimeout(myFunc, 3000);
+  console.dir(myFunc1);
+  setTimeout(myFunc1, 3000);
 }
 console.log(i);
+
+function outer() {
+  let counter = 0;
+  function inner() {
+    counter++;
+    console.log(counter);
+  }
+  return inner;
+}
+
+const fn = outer();
+fn();
+fn();
