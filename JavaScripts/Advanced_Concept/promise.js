@@ -1,11 +1,8 @@
 /**
  * promises are used to handle asynchronous operations
  * async await is used to handle asynchronous operations
- *
  */
-
 // 1. Promises are used to handle asynchronous operations
-
 const promise = new Promise((resolve, reject) => {
   const hasMeeting = true;
   if (hasMeeting) {
