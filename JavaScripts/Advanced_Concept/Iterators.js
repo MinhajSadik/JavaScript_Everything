@@ -1,7 +1,6 @@
 /**
  * Iterators are a way to iterate over a collection of items.
  * They are a way to access the items in a collection.
- *
  */
 
 const array = ["minhaj", "sharmina", "sharminhaj"];
@@ -97,4 +96,4 @@ function range(start, end, step) {
   //   );
 }
 
-console.log([...range(100, 10000, 5)]);
+console.log([...range(100, 1000, 5)]);
