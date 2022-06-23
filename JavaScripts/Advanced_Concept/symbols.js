@@ -51,5 +51,23 @@ class Product {
   }
 }
 
-const laptop = new Product("mobile");
-console.log("mobile".search(laptop));
+const laptop = new Product("laptop");
+console.log("laptop".search(laptop));
+
+function myFunc() {
+  const PVT = Symbol("My Private Property");
+  return {
+    modify(obj) {
+      obj[PVT] = true;
+    },
+    output(obj) {
+      return obj[PVT];
+    },
+  };
+}
+
+const value = myFunc();
+const obj = { a: 1, b: 2 };
+value.modify(obj);
+console.log(value.output(obj));
+console.log(obj);
