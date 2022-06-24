@@ -61,11 +61,7 @@ console.log([
 ]);
 
 //Custom Iterator
-function* customIterator() {
-  yield array[0];
-  yield array[1];
-  yield array[2];
-}
+
 const cIterator = customIterator();
 console.log(cIterator.next());
 console.log(cIterator.next());
