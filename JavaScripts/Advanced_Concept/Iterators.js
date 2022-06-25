@@ -60,14 +60,6 @@ console.log([
   [3, "sharminhaj"],
 ]);
 
-//Custom Iterator
-
-const cIterator = customIterator();
-console.log(cIterator.next());
-console.log(cIterator.next());
-console.log(cIterator.next());
-console.log(cIterator.next());
-
 //Custom Iterator same as iterator
 function range(start, end, step) {
   let current = start;

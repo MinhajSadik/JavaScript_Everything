@@ -26,6 +26,10 @@ function* generator() {
 
 const iterator = generator();
 console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
 
 //compare with custom Iterator to generator
 const object = {
