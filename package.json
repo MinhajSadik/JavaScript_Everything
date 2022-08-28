@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/MinhajSadik/Practice-JavaScript#readme",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.19"
   }
 }
