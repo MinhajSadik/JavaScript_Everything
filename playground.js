@@ -1,3 +1,204 @@
+function fibonacci(n) {
+  if (n <= 1) return 1;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+let result = fibonacci(8);
+console.log(result);
+
+const exOne = Array(5);
+console.log(exOne);
+
+const exTwo = [];
+exTwo[2] = "two";
+
+console.log(exTwo);
+
+const exThree = [, , ,];
+console.log(exThree);
+
+function fibonacci(targetIndex) {
+  const sequence = [0n, 1n];
+  for (let i = 2; i < targetIndex + 1; i++) {
+    const next = sequence[i - 1] + sequence[i - 2];
+    sequence.push(next);
+  }
+  return sequence[targetIndex];
+}
+
+// console.log(fibonacci(2023));
+
+// function perameter wise behavior
+function foo(b) {
+  let a = 10;
+  return a + b + 11; // 10 + 11 = 21;
+}
+
+function bar(x) {
+  let y = 3;
+  return foo(x * y); // 7 * 3 = 21
+}
+
+const baz = bar(7); // result 42 to baz
+
+console.log(baz);
+
+function swap(a, b) {
+  return ([a, b] = [b, a]);
+}
+
+console.log(swap(1, 2));
+
+console.log(5 + "2" * false);
+
+function sumOfDigits(a, b, c, sum) {
+  sum = a + b + c;
+  return sum;
+}
+
+sumOfDigits(1, 2, 3);
+
+const arr = [
+  "next topper",
+  10,
+  20,
+  true,
+  100,
+  false,
+  "",
+  NaN,
+  "next topper",
+  10,
+  "",
+  20,
+  100,
+];
+
+const remove_falsey_value = arr.filter((isFalse) => {
+  return (
+    isFalse !== undefined &&
+    isFalse !== null &&
+    isFalse !== "" &&
+    !isNaN(isFalse) &&
+    isFalse !== NaN &&
+    isFalse !== false
+  );
+});
+
+console.log(remove_falsey_value);
+
+const remove_duplicate_value = arr.filter((isDuplicate, index) => {
+  return arr.indexOf(isDuplicate) === index;
+});
+
+console.log(remove_duplicate_value);
+
+function mul(x) {
+  return function (y) {
+    return function (z) {
+      return x * y * z;
+    };
+  };
+}
+
+console.log(mul(3)(3)(3));
+
+function largestNumber(arr) {
+  let largest = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    let element = arr[i];
+    if (element > largest) {
+      largest = element;
+    }
+  }
+  return largest;
+}
+
+const largestNumberOfArraySort = (array) => {
+  return array.sort((a, b) => {
+    return b - a;
+  })[0];
+};
+
+const result1 = largestNumberOfArraySort([10, 20, 30, 40, 50]);
+console.log(result1);
+
+const output = largestNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+console.log(output);
+
+let x = 5;
+let y = 9;
+
+//greter than
+if (x > 8) {
+  console.log("YES");
+} else {
+  console.log("NO");
+}
+
+//less than
+if (x < 8) {
+  console.log("YES");
+} else {
+  console.log("NO");
+}
+
+//less than or equal
+if (x <= 8) {
+  console.log("YES");
+} else {
+  console.log("NO");
+}
+
+//greater than or equal
+if (x >= 8) {
+  console.log("YES");
+} else {
+  console.log("NO");
+}
+
+let a = 0,
+  b = "",
+  c = false,
+  d = null,
+  e = undefined,
+  f = NaN,
+  g = true;
+
+console.log(+a, typeof a);
+console.log(+b, typeof b);
+console.log(+c, typeof c);
+console.log(+d, typeof d);
+console.log(+e, typeof e);
+console.log(+f, typeof f);
+console.log(+g, typeof g);
+
+if (5 > 9) {
+  console.log("YES");
+}
+
+const button = document.getElementById("button");
+
+function debounced(func, delay) {
+  let timeout;
+  return function () {
+    if (timeout) {
+      clearTimeout(timeout);
+    }
+
+    timeout = setTimeout(() => {
+      func();
+    }, delay);
+  };
+}
+
+button.addEventListener(
+  "click",
+  debounced(function () {
+    console.log("Clicked");
+  }, 500)
+);
+
 // function addition(a, b) {
 //   return a + b;
 // }
