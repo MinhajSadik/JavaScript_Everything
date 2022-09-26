@@ -187,3 +187,63 @@ const resultOfDiagonalDifference = diagonalDifference([
 ]);
 
 console.log(resultOfDiagonalDifference);
+
+//1.9 formingMagicSquare
+function formingMagicSquare(s) {
+  const squares = [
+    "618753294",
+    "816357492",
+    "834159672",
+    "438951276",
+    "672159834",
+    "276951438",
+    "294753618",
+    "492357816",
+  ];
+  let min = 100;
+  let cost = (s, squares) => {
+    return [...s.map((value) => value.join("")).join("")].reduce(
+      (target, item, index) => {
+        target += Math.abs(+item - +squares[index]);
+
+        return target;
+      },
+      0
+    );
+  };
+
+  squares.forEach((item, index) => {
+    let value = cost(s, squares[index]);
+
+    value < min && (min = value);
+  });
+
+  return min;
+}
+
+//2.0 climbingLeaderboard
+function climbingLeaderboard(ranked, player) {
+  // Write your code here
+  let rank = [];
+  for (let i = 0; i < ranked.length; i++) {
+    if (rank.length === 0) {
+      rank.push(ranked[i]);
+    } else {
+      if (rank[rank.length - 1] === ranked[i]) {
+        continue;
+      }
+      rank.push(ranked[i]);
+    }
+  }
+
+  let res = [];
+  let lowestRank = rank.length;
+  for (let i = 0; i < player.length; i++) {
+    while (player[i] >= rank[lowestRank - 1] && lowestRank > 0) {
+      rank.pop;
+      lowestRank--;
+    }
+    res.push(lowestRank + 1);
+  }
+  return res;
+}
