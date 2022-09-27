@@ -3,7 +3,7 @@
  * They are used to create a unique object that can be used as a property key.
  */
 
-const symbol = Symbol("i am minhaj symbol"); //symbol with description
+const symbol = Symbol("i am symbol"); //symbol with description
 console.log(symbol);
 
 const name1 = Symbol.for("name1");

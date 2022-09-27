@@ -36,8 +36,8 @@ function Person(name, age) {
   return person;
 }
 
-const minhaj = Person("minhaj", 24);
-const sadik = Person("sadik", 24);
+const personMinhaj = Person("minhaj", 24);
+const personSadik = Person("sadik", 24);
 
 // prototype example 02
 const personMethod = {
