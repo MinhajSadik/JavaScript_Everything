@@ -17,7 +17,7 @@ console.log(exTwo);
 const exThree = [, , ,];
 console.log(exThree);
 
-function fibonacci(targetIndex) {
+function fibonacci1(targetIndex) {
   const sequence = [0n, 1n];
   for (let i = 2; i < targetIndex + 1; i++) {
     const next = sequence[i - 1] + sequence[i - 2];
@@ -26,7 +26,7 @@ function fibonacci(targetIndex) {
   return sequence[targetIndex];
 }
 
-// console.log(fibonacci(2023));
+// console.log(fibonacci1(2023));
 
 // function perameter wise behavior
 function foo(b) {
@@ -177,7 +177,7 @@ if (5 > 9) {
   console.log("YES");
 }
 
-const button = document.getElementById("button");
+// const button = document.getElementById("button");
 
 function debounced(func, delay) {
   let timeout;
@@ -192,12 +192,12 @@ function debounced(func, delay) {
   };
 }
 
-button.addEventListener(
-  "click",
-  debounced(function () {
-    console.log("Clicked");
-  }, 500)
-);
+// button.addEventListener(
+//   "click",
+//   debounced(function () {
+//     console.log("Clicked");
+//   }, 500)
+// );
 
 // function addition(a, b) {
 //   return a + b;
@@ -434,3 +434,17 @@ console.log(removeFirstThreeElements([1, 2, 3, 4, 5]));
 })();
 
 console.log(b);
+
+let longestName = "";
+
+function bestFriends(allFriends) {
+  for (let i = 0; i < allFriends.length; i++) {
+    const friendName = allFriends[i];
+    if (friendName.length > longestName.length) {
+      longestName = friendName;
+    }
+  }
+  return longestName;
+}
+
+console.log(bestFriends(["minhaj", "sadik", "salam", "himuislam"]));
