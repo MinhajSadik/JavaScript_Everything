@@ -5,8 +5,8 @@ const arrayMap = (arr, fn) => {
 
   for (let i = 0; i < arr.length; i++) {
     newArray.push(fn(arr[i]));
+    console.count("countTime");
   }
-
   return newArray;
 };
 
