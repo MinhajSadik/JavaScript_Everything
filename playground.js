@@ -448,3 +448,132 @@ function bestFriends(allFriends) {
 }
 
 console.log(bestFriends(["minhaj", "sadik", "salam", "himuislam"]));
+
+var languages = ["php", "javascript"];
+languages.length = 0;
+languages.push("golang");
+console.log(languages);
+
+function sayHi(name) {
+  return { say: `welcome ${name}` };
+}
+
+console.log(sayHi("turing"));
+
+(function (foo) {
+  console.log(typeof foo);
+})([1, 2, 3]);
+
+var index = 1,
+  count = {};
+
+count: {
+  begin: 2;
+  baz: ++index;
+}
+
+console.log(count.begin + count.index + index);
+
+let turingArr = [1, "Turing", { x: 2 }, [3, 4]];
+
+for (let i = 0; i < turingArr.length; i++) {
+  if (turingArr[i] === "Turing") turingArr.splice(i, 1);
+  else console.log(turingArr[i]);
+}
+
+console.log(turingArr);
+
+function hello(name) {
+  console.log(name);
+}
+console.log("Hi" + hello("min"));
+
+var t = 99;
+t = "turing";
+console.log(t);
+
+function welcome(name) {
+  console.log("hi");
+
+  setTimeout(() => {
+    console.log(`i am ${name}`);
+  }, 0);
+  console.log(`bye ${name}`);
+}
+
+welcome("turing");
+
+const xs = [1, 2];
+
+xs[0] = 10;
+xs[1] = 20;
+xs[2] = 30;
+
+console.log(xs);
+
+console.log(Number("10") - 10 == 0);
+
+let ys = { y: 1 };
+ys.x = ys;
+
+// let outputs = JSON.stringify(ys);
+// console.log(outputs);
+
+let bc = [];
+let cs = [] + bc + "Turing".split("");
+
+console.log(cs);
+
+const day = "mon";
+const values = {
+  sat: 0,
+  sun: 1,
+};
+
+console.log(values[day] ?? -1);
+
+const array = ["Like", "Share", "Comment"];
+array.splice(2, 1, "JS Startup");
+
+var URL = require("url").URL;
+const myUrl = new URL("https://voiceroom.com:3000");
+console.log(myUrl.port);
+myUrl.port = 5000;
+console.log(myUrl.port);
+myUrl.port = 1234;
+console.log(myUrl.port);
+console.log(myUrl.href);
+myUrl.port = "abcd";
+console.log(myUrl.port);
+myUrl.port = "5678abcd";
+console.log(myUrl.port);
+myUrl.port = 1234.1234;
+console.log(myUrl.port);
+console.log(myUrl.href);
+
+try {
+  const m = 1;
+  const n = m + z;
+  console.log(n);
+} catch (error) {
+  console.log(error.name);
+}
+
+const user = {
+  hello: "welcome to turing",
+  sayHello() {
+    console.log(this.hello);
+  },
+};
+
+setTimeout(user.sayHello.bind(user), 1000);
+
+console.log(1);
+setTimeout(() => {
+  console.log(2);
+}, 0);
+
+Promise.resolve(3).then(console.log);
+console.log(4);
+
+console.time("time");
