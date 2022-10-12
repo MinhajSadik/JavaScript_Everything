@@ -535,7 +535,7 @@ console.log(values[day] ?? -1);
 const array = ["Like", "Share", "Comment"];
 array.splice(2, 1, "JS Startup");
 
-var URL = require("url").URL;
+import { URL } from "url";
 const myUrl = new URL("https://voiceroom.com:3000");
 console.log(myUrl.port);
 myUrl.port = 5000;
@@ -569,6 +569,7 @@ const user = {
 setTimeout(user.sayHello.bind(user), 1000);
 
 console.log(1);
+
 setTimeout(() => {
   console.log(2);
 }, 0);
@@ -577,3 +578,8 @@ Promise.resolve(3).then(console.log);
 console.log(4);
 
 console.time("time");
+
+let ax = 0;
+
+for (ax; ax < 5; ax++);
+console.log("ax", ax);
