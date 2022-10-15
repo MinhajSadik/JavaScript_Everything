@@ -8,7 +8,7 @@ function factorial(num) {
 }
 
 const resultFactorial = factorial(6);
-console.log(resultFactorial);
+console.log("resultFactorial", resultFactorial);
 
 function callbackExplain(name, age, task) {
   console.log(`${name} is ${age} years old`);

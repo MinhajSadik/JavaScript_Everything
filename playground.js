@@ -580,6 +580,5 @@ console.log(4);
 console.time("time");
 
 let ax = 0;
-
 for (ax; ax < 5; ax++);
 console.log("ax", ax);
