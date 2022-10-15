@@ -92,7 +92,6 @@ const megaFriendResult = megaFriend(friends);
 console.log(megaFriendResult);
 
 /* solved my 4 problem solving assignment */
-
 import { shortFunctionCall } from "./basic";
 
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
