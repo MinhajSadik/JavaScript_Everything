@@ -66,3 +66,8 @@ items.size; // 2
 
 items.clear();
 items.size;
+
+//array escape perameter
+const newArr = array.map((val, __, ___) => console.log(val));
+
+console.log(newArr);
