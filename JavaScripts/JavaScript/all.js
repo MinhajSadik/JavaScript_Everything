@@ -1,3 +1,4 @@
+//Factorial
 function factorial(num) {
   if (num < 0) {
     return 0;
@@ -10,6 +11,7 @@ function factorial(num) {
 const resultFactorial = factorial(6);
 console.log("resultFactorial", resultFactorial);
 
+//Callback explaination
 function callbackExplain(name, age, task) {
   console.log(`${name} is ${age} years old`);
   task();
@@ -21,6 +23,7 @@ function task() {
 
 callbackExplain("Minhaj", 12, task);
 
+//Arguments Explaination
 function argumentExplain(num, num1, ...rest) {
   console.log(num, num1, rest);
   return num * num1 * rest.reduce((a, b) => console.log(a, b));
@@ -38,6 +41,7 @@ console.error(resultFactorial);
 console.time("factorial", resultFactorial);
 console.timeEnd("factorial", resultFactorial);
 
+//Problem
 var x;
 if (1 < x < 3) {
   console.log("x is between 1 and 3");
@@ -46,6 +50,7 @@ if ("" == 0) {
   console.log("it is, but why?");
 }
 
+//Map Object
 const items = new Map([
   [1, { name: "John" }],
   [2, { name: "Mary" }],

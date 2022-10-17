@@ -33,7 +33,3 @@ const isEqual = (first, second) =>
   JSON.stringify([...new Set(second)].sort());
 
 console.log(isEqual(array, array)); // true
-
-const newArr = array;
-
-console.log(newArr);
