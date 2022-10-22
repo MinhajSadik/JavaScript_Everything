@@ -1,4 +1,4 @@
-//types: string, number, array, null, undefiend, boolean never, unknown, any
+//types:= Any, number, string, boolean, object, Array, Tuple, Enum, undefined, null, void, never, unknown
 
 const a: string = "hello world";
 const b: number = 234;
