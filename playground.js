@@ -464,7 +464,7 @@ console.log(sayHi("turing"));
   console.log(typeof foo);
 })([1, 2, 3]);
 
-var index = 1,
+let index = 1,
   count = {};
 
 count: {
@@ -568,17 +568,34 @@ const user = {
 
 setTimeout(user.sayHello.bind(user), 1000);
 
-console.log(1);
+// console.log(1);
 
 setTimeout(() => {
   console.log(2);
 }, 0);
 
-Promise.resolve(3).then(console.log);
-console.log(4);
+// Promise.resolve(3).then(console.log);
+// console.log(4);
 
 console.time("time");
 
 let ax = 0;
 for (ax; ax < 5; ax++);
 console.log("ax", ax);
+
+console.log("what is the syntex", 23.43 | 1);
+
+let name = {
+  firstName: "Minhaj",
+  lastName: "Sadik",
+};
+
+function printFullName(hometown, state) {
+  console.log(this.firstName + this.lastName + hometown + state);
+}
+
+printFullName.call(name, "sylhet", "bangladesh");
+
+printFullName.apply(name, ["sylhet", "Bangladesh"]);
+const printMyName = printFullName.bind(name, "-sylhet", "-Bangladesh");
+printMyName();

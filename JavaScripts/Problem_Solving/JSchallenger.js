@@ -16,7 +16,6 @@ function string_to_object(a, b) {
 // Write a function that takes two strings (a and b) as arguments
 // return how many times does the character occur in this sentence?
 //2. youtube uploaded
-
 function countStringOccur(a, b) {
   // return b.split(a).length - 1;
   return [...b].filter((val) => val === a).length;
@@ -28,6 +27,17 @@ function countStringOccur(a, b) {
 //     "how many times does the character occur in this sentence?"
 //   )
 // );
+
+const arr = [10, 10, 22, 21, 22];
+function countArrayOccurance(arr) {
+  const counts = arr.reduce((acc, num) => {
+    acc[num] = acc[num] ? acc[num] + 1 : 1;
+    return acc;
+  }, {});
+  return counts;
+}
+
+console.log("array occurance", countArrayOccurance(arr));
 
 // Write a function that takes an object (a) and a string (b) as argument
 // Return true if the object has a property with key 'b', but only if it has a truthy value
