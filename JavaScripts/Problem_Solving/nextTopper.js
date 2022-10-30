@@ -81,4 +81,13 @@ function randomName(arr) {
 }
 
 const worker = randomName(workers);
-console.log(worker);
+console.log("worker:=", worker);
+
+function infinityLoop() {
+  // while (true) {
+  //   console.log("Infinity");
+  // }
+  for (let i = 0; i < Infinity; i++) {
+    console.log("infinity");
+  }
+}
