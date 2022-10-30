@@ -1,6 +1,5 @@
 //1 copareTriplets
 function compareTriplets(a, b) {
-  // Write your code here
   let score = [0, 0];
   for (let i = 0; i < a.length; i++) {
     if (a[i] > b[i]) {
@@ -17,7 +16,6 @@ console.log(resultOfCompareTriplets);
 
 //1.2 aVeryBigSum
 function aVeryBigSum(n) {
-  // Write your code here
   let sum = 0;
   for (let i = 0; i < n.length; i++) {
     sum += n[i];
@@ -32,7 +30,6 @@ console.log(resultOfAVeryBigSum);
 
 //1.3 fizzBuzz
 function fizzBuzz(n) {
-  // Write your code here
   // let result = [];
   for (let i = 1; i <= n; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
@@ -78,6 +75,7 @@ function findSum(numbers, queries) {
     for (let j = queries[i][0] - 1; j < queries[i][1]; j++) {
       sum += numbers[j];
     }
+    console.log("queries", queries);
     result.push(sum);
   }
   return result;
@@ -616,8 +614,8 @@ function findDigits(n) {
   }, 0);
 }
 
-//4.6 extraLongFactorials
-function extraLongFactorials(n) {
+//4.6 extraLongFactorials1
+function extraLongFactorials1(n) {
   let memoization = [BigInt(0), BigInt(1)];
 
   const factorial = (num) =>
@@ -725,8 +723,8 @@ function nonDivisibleSubset(k, s) {
   return result;
 }
 
-//5.2 cutTheSticks
-function cutTheSticks(arr) {
+//5.2 cutTheSticks1
+function cutTheSticks1(arr) {
   let result = [];
 
   while (arr.length > 0) {
@@ -768,8 +766,8 @@ function repeatedString(s, n) {
   return result;
 }
 
-//5.4 jumpingOnClouds
-function jumpingOnClouds(c) {
+//5.4 jumpingOnClouds1
+function jumpingOnClouds1(c) {
   let jump = 0,
     i = 0;
   do {
@@ -885,7 +883,6 @@ function processOrderList(orderList, orderId, state) {
       }))
     : orderList.filter((item) => item.id !== orderId);
 }
-i;
 
 //
 class ParkingLot {
@@ -990,7 +987,7 @@ class Image {
 
 //
 // HackerRank's NodeJS environment allows the `request` package.
-// const request = require('request');
+// const request = require("request");
 
 function fetch(url) {
   return new Promise((resolve, reject) => {
@@ -1022,19 +1019,19 @@ async function getCountryName(code) {
   return countryName;
 }
 
-getCountryName("AF").then((result) => {
-  console.log(result);
-});
-getCountryName("ZW").then((result) => {
-  console.log(result);
-});
-getCountryName("NaN")
-  .then((result) => {
-    console.log(result);
-  })
-  .catch((error) => {
-    console.log(error.message);
-  });
+// getCountryName("AF").then((result) => {
+//   console.log(result);
+// });
+// getCountryName("ZW").then((result) => {
+//   console.log(result);
+// });
+// getCountryName("NaN")
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((error) => {
+//     console.log(error.message);
+//   });
 
 //
 function taumBday(b, w, bc, wc, z) {
