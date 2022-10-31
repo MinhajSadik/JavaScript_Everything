@@ -591,11 +591,13 @@ let name = {
 };
 
 function printFullName(hometown, state) {
-  console.log(this.firstName + this.lastName + hometown + state);
+  console.log(this.firstName + this.lastName + " " + hometown + " " + state);
 }
 
 printFullName.call(name, "sylhet", "bangladesh");
 
 printFullName.apply(name, ["sylhet", "Bangladesh"]);
+
 const printMyName = printFullName.bind(name, "-sylhet", "-Bangladesh");
+
 printMyName();
