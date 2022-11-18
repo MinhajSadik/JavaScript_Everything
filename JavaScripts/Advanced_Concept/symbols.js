@@ -1,5 +1,5 @@
 /**
- * Symbols are a new type of object in JavaScript.
+ * Symbols are a new primitiv data type of object in JavaScript.
  * They are used to create a unique object that can be used as a property key.
  */
 

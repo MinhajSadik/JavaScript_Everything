@@ -15,12 +15,11 @@ const myObject = {
   *generator() {},
 };
 
-const array = ["minhaj", "sharmina", "sharminhaj"];
+const array = ["minhaj", "ahmed", "sadik"];
 
 function* generator() {
   yield "minhaj";
-  yield "sharmina";
-  yield "sharminhaj";
+  yield "ahmed";
   yield "sadik";
 }
 
