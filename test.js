@@ -1,6 +1,11 @@
-function myFunction() {
-    return 'Bangladesh'
+function myFunction(a, b) {
+    return a.includes(b) ? b + a : a + b
+
 }
 
+console.log(myFunction('cheese', 'cake'))
 
-console.log(myFunction`hello`)
+
+class MinhajSadik {
+    
+}
