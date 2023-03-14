@@ -1,10 +1,10 @@
 /**
  * Brute Force - Linear Search
  * Time O(N^2) | Space O(1)
- * https://leetcode.com/problems/contains-duplicate/
  * @param {number[]} nums
  * @return {boolean}
  */
+
 var containsDuplicate = (nums) => {
     for (let right = 0; right < nums.length; right++) {/* Time O(N) */
         for (let left = 0; left < right; left++) {         /* Time O(N) */
@@ -19,10 +19,10 @@ var containsDuplicate = (nums) => {
 /**
  * Sort - HeapSort Space O(1) | QuickSort Space O(log(N))
  * Time O(N * log(N)) | Space O(1)
- * https://leetcode.com/problems/contains-duplicate/
  * @param {number[]} nums
  * @return {boolean}
  */
+
 var containsDuplicate = (nums) => {
     nums.sort((a, b) => a - b);/* Time O(N * log(N)) | Space O(1 || log(N)) */
 
@@ -43,10 +43,10 @@ const hasDuplicate = (nums) => {
 /**
  * Hash Set
  * Time O(N) | Space O(N)
- * https://leetcode.com/problems/contains-duplicate/
  * @param {number[]} nums
  * @return {boolean}
  */
+
 var containsDuplicate = (nums) => {
     const numsSet = new Set(nums);/* Time O(N) | Space O(N) */
     const isEqual = numsSet.size === nums.length;
@@ -57,10 +57,10 @@ var containsDuplicate = (nums) => {
 /**
  * Hash Set - Early Exit
  * Time O(N) | Space O(N)
- * https://leetcode.com/problems/contains-duplicate/
  * @param {number[]} nums
  * @return {boolean}
  */
+
 var containsDuplicate = (nums, numsSet = new Set()) => {
     for (const num of nums) {/* Time O(N) */
         if (numsSet.has(num)) return true;
