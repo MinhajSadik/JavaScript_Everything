@@ -24,7 +24,8 @@ var containsDuplicate = (nums) => {
  */
 
 var containsDuplicate = (nums) => {
-    nums.sort((a, b) => a - b);/* Time O(N * log(N)) | Space O(1 || log(N)) */
+    /* Time O(N * log(N)) | Space O(1 || log(N)) */
+    nums.sort((a, b) => a - b);
 
     return hasDuplicate(nums);
 }
@@ -48,7 +49,7 @@ const hasDuplicate = (nums) => {
  */
 
 var containsDuplicate = (nums) => {
-    const numsSet = new Set(nums);/* Time O(N) | Space O(N) */
+    const numsSet = new Set(nums); /* Time O(N) | Space O(N) */
     const isEqual = numsSet.size === nums.length;
 
     return !isEqual;
