@@ -21,9 +21,11 @@ function memo(func) {
     var cache = {};
     return function (x) {
         if (cache[x]) {
+            console.log("cache", cache);
             return cache[x];
         } else {
-            var result = func(x)
+            const result = func(x)
+            console.log("calculating", cache);
             cache[x] = result;
             return result;
         }
@@ -33,8 +35,8 @@ function memo(func) {
 
 const calculation = memo(add)
 
-// console.log(calculation(20));
-// console.log(calculation(20));
+console.log(calculation(20));
+console.log(calculation(20));
 
 /*
 @MinhajSadik
@@ -74,10 +76,10 @@ function nastedMemo(func) {
 
 
 const newCalculation = nastedMemo(nastedAdd)
-console.log(newCalculation(20, 30, 50));
-console.log(newCalculation(20, 30, 50));
-console.log(newCalculation(20, 30, 50));
-console.log(newCalculation(20, 30, 50));
-console.log(newCalculation(20, 30, 50));
-console.log(newCalculation(20, 30, 50));
-console.log(newCalculation(20, 30, 50));
+// console.log(newCalculation(20, 30, 50));
+// console.log(newCalculation(20, 30, 50));
+// console.log(newCalculation(20, 30, 50));
+// console.log(newCalculation(20, 30, 50));
+// console.log(newCalculation(20, 30, 50));
+// console.log(newCalculation(20, 30, 50));
+// console.log(newCalculation(20, 30, 50));
